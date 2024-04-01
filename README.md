@@ -42,7 +42,7 @@ Select; Options=1-3, Context=C, Exit=X:
 
 ## Usage
 1. Download and put the batch wherever you want OpenCodeInterpreter to be working.
-2. Run InterLocal.Bat as Admin.
+2. Run InterLocalRun.Bat as Admin.
 3. Select desired options from menu, `1-3` will run OpenCodeInterpreter, `c` will change context.
 
 ### Requirements
