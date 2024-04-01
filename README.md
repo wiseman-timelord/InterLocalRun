@@ -1,7 +1,13 @@
 # InterLocalRun
 
-### Status
-Working, fixed some error with manually inputting the context length, it seems to be able to auto-detect it, just letting it do that.
+### Status: Working
+- Recent updates were..
+1. fixed some error with manually inputting the context length, it seems to be able to auto-detect it, just letting it do that. 
+2. enlarged interface, its suited to half a 1920x1080 display, the idea is the other half can be LM Server.
+- Work remaining is..
+1. re-formatting, use all the window for the menu.
+2. Figure out the cache thing.
+3. determine if any of the other arguments are useful.
 
 ### Description
 This batch will automate some of the command line arguments for running OpenCodeInterpreter, its a program, somewhat similar to and maybe inspired by, AutoGPT.
