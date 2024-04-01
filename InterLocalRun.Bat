@@ -11,7 +11,7 @@ echo.
 mode con cols=100 lines=60
 title InterLocalRun
 set max_tokens_385=4096
-set context_window_947=2048
+set context_window_947=1024
 timeout /t 1 /nobreak >nul
 echo Launcher Initialized...
 echo.
@@ -112,8 +112,8 @@ echo.
 echo =========================( InterLocalRun )=========================
 echo.
 set /p modelContext=Enter Model Context: 
-set /a context_window_947=%modelContext% / 2
-set /a max_tokens_385=%modelContext% - 1
+set /a context_window_947=%modelContext% / 4
+set /a max_tokens_385=%modelContext%
 echo Context window set to %context_window_947%
 echo Max tokens set to %max_tokens_385%
 echo.
