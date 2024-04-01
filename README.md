@@ -36,15 +36,15 @@ This batch will automate some of the command line arguments for running OpenCode
 
 
 ------------------------------------------------------------------
-Select; Options=1-3, Context=C, Exit=X:
+Select; Options=1-3, Exit=X:
 
 ```
 
 ## Usage
 1. Download and put the batch wherever you want OpenCodeInterpreter to be working.
 2. Run InterLocalRun.Bat as Admin.
-3. Select desired options from menu, `1-3` will run OpenCodeInterpreter, `c` will change context.
-- I advise do not use option 2 (Auto+Force) unless you have a 70B model in HQ, and even then have already extensively watched it compitently carry out tasks. Dont say I didn't warn you! 
+3. Select desired options from menu, `1-3` will run OpenCodeInterpreter.
+- I advise do not use option 2 (Auto+Force) unless you are confident in, your prompt and the model. 
 
 ### Requirements
 - By default it assumes, 4096 Max and 1024 Response, context, but If you select "C" from the menu you can change this, and it assumes you will want a response context 1/4 of the model context used.
