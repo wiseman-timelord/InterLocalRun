@@ -45,6 +45,41 @@ This batch will automate some of the command line arguments for running OpenCode
 Select; Options=1-3, Exit=X:
 
 ```
+- Example Project...
+```
+
+=========================( InterLocalRun )=========================
+
+Launching Script...
+
+
+▌ Open Interpreter is compatible with several local model providers.
+
+[?] What one would you like to use?:
+   Llamafile
+   Ollama
+ > LM Studio
+   Jan
+
+
+To use use Open Interpreter with LM Studio, you will need to run LM Studio in the background.
+
+
+ 1 Download LM Studio from https://lmstudio.ai/, then start it.
+
+ 2 Select a language model then click Download.
+
+ 3 Click the <-> button on the left (below the chat button).
+
+ 4 Select your model at the top, then click Start Server.
+
+
+Once the server is running, you can begin your conversation below.
+
+
+> Please create a text based game about a character named Driftman; through text prompts the user can go to different locations in a generic town, where at each location, woods, lake, park, alley, shop, street, home, there will be a changing theme of the, public or authorities or criminals, whom will produce differing scenarios involving Driftman should he chooose to talk to them. You just need to, brainstorm it a bit and create a plan, then create the program, and give the differing, locations and groups and scenarios, a very very brief one sentence description. You should start by, brainstorming and planning, the project.
+
+```
 
 ## Usage
 1. Download and put the batch wherever you want OpenCodeInterpreter to be working.
