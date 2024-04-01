@@ -1,7 +1,7 @@
 # InterLocalRun
 
 ### Status
-Working, but newly created, simple tho.
+Working, fixed some error with manually inputting the context length, it seems to be able to auto-detect it, just letting it do that.
 
 ### Description
 This batch will automate some of the command line arguments for running OpenCodeInterpreter, its a program, somewhat similar to and maybe inspired by, AutoGPT.
