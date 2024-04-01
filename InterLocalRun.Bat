@@ -8,10 +8,8 @@ echo.
 echo =========================( InterLocalRun
  )=========================
 echo.
-mode con cols=100 lines=60
+mode con cols=110 lines=60
 title InterLocalRun
-set max_tokens_385=4096
-set context_window_947=1024
 timeout /t 1 /nobreak >nul
 echo Launcher Initialized...
 echo.
@@ -49,11 +47,10 @@ echo.
 echo ------------------------------------------------------------------
 
 :: Variables
-set /p choice=Select; Options=1-3, Context=C, Exit=X: 
+set /p choice=Select; Options=1-3, Exit=X: 
 if "%choice%"=="1" goto executeMain
 if "%choice%"=="2" goto executeMainForce
 if "%choice%"=="3" goto executeMainOffline
-if "%choice%"=="C" goto changeContext
 if "%choice%"=="x" goto end
 echo Invalid choice. Try again.
 timeout /t 2 /nobreak >nul
@@ -69,7 +66,7 @@ timeout /t 1 /nobreak >nul
 echo Launching Script...
 echo.
 timeout /t 1 /nobreak >nul
-interpreter --local --context_window %context_window_947% --max_tokens %max_tokens_385% --disable_telemetry
+interpreter --local --disable_telemetry
 echo.
 echo Returning to menu..
 timeout /t 2 /nobreak >nul
@@ -84,7 +81,7 @@ timeout /t 1 /nobreak >nul
 echo Launching Script...
 echo.
 timeout /t 1 /nobreak >nul
-interpreter --local --context_window %context_window_947% --max_tokens %max_tokens_385% --disable_telemetry --auto_run --force_task_completion
+interpreter --local --disable_telemetry --auto_run --force_task_completion
 echo.
 echo Returning to menu..
 timeout /t 2 /nobreak >nul
@@ -99,27 +96,9 @@ timeout /t 1 /nobreak >nul
 echo Launching Script...
 echo.
 timeout /t 1 /nobreak >nul
-interpreter --local --context_window %context_window_947% --max_tokens %max_tokens_385% --disable_telemetry --offline
+interpreter --local --disable_telemetry --offline
 echo.
 echo Returning to menu..
-timeout /t 2 /nobreak >nul
-goto menu
-
-:: Check File Structure
-:changeContext
-cls
-echo.
-echo =========================( InterLocalRun )=========================
-echo.
-set /p modelContext=Enter Model Context: 
-set /a context_window_947=%modelContext% / 4
-set /a max_tokens_385=%modelContext%
-echo Context window set to %context_window_947%
-echo Max tokens set to %max_tokens_385%
-echo.
-timeout /t 1 /nobreak >nul
-echo Returning to menu..
-echo.
 timeout /t 2 /nobreak >nul
 goto menu
 
