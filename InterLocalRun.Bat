@@ -33,7 +33,7 @@ echo.
 echo.
 echo                        1. Run InterLocalRun Local,
 echo.
-echo                    2. Run InterLocalRun Local (Force),
+echo               2. Run InterLocalRun Local (Auto+Complete),
 echo.
 echo                   3. Run InterLocalRun Local (Offline),
 echo.
@@ -84,7 +84,7 @@ timeout /t 1 /nobreak >nul
 echo Launching Script...
 echo.
 timeout /t 1 /nobreak >nul
-interpreter --local --context_window %context_window_947% --max_tokens %max_tokens_385% --disable_telemetry --force_task_completion
+interpreter --local --context_window %context_window_947% --max_tokens %max_tokens_385% --disable_telemetry --auto_run --force_task_completion
 echo.
 echo Returning to menu..
 timeout /t 2 /nobreak >nul
