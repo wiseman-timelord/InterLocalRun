@@ -1,6 +1,7 @@
 # InterLocalRun
 
 ### Status: Working
+After messing around with it fow an entire day, then using what I considered to be the best configuration, and leaving OpenCodeInterpreter over night with the task of creating a simple text based game, it didnt even create one file, so, I will probably wait a bit and try the next version. Development may be limited til then.
 - Recent updates were..
 1. fixed some error with manually inputting the context length, it seems to be able to auto-detect it, just letting it do that. 
 2. enlarged interface, its suited to half a 1920x1080 display, the idea is the other half can be LM Server.
